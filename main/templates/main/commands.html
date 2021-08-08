@@ -1,1 +1,30 @@
-<h1>Commands</h1>
+{% load static%}
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type='text/css', href= "{% static 'main/style.css' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <ul>
+    <li><a href="{% url 'commands-main' %}">Commands</a></li>
+    <li><a href="{% url 'about-main'%}">About</a></li>
+    <li><a href="{% url 'views-main' %}">Add to Discord</a></li>
+    <li style="float:left"><a href="#">ClimateHelper</a></li>
+    <li><a class="active" href="{% url 'home-main'%}">Home</a></li>
+  </ul>
+    <script src="script.js"></script>
+    <div class ="test">
+        <h1 class="test" >Commands</h1>
+        <h3 class="subtitle">.carbon_footprint - this calculates your carbon footprint</h3> 
+        <h3 class="subtitle">.food - this finds out the impact of a type of food</h3> 
+        <h3 class="subtitle">.country - finds out the impact of a country and others</h3> 
+    </div>
+  </body>
+</html>
+
+
+
