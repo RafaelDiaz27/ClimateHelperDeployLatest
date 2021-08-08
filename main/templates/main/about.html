@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <ul>
+    <li><a class="active" href="{% url 'home-main' %}">Home</a></li>
+    <li><a href="#">Commands</a></li>
+    <li><a href="{% url 'about-main'%}">About</a></li>
+    <li><a href="https://discord.com/oauth2/authorize?client_id=873296088025686016&permissions=0&scope=bot">add to discord</a></li>
+    <li style="float:left"><a href="#">ClimateHelper</a></li>
+  </ul>
+    <script src="script.js"></script>
+    <div>
+    <h1 class="test" >About Us</h1>
+    <h2 class="subtitle">We are ClimateCoders, the team behind the ClimateHelper discord bot</h2>
+    <h3>We can't survive without our planet, and yet we mistreat it all the time. This happens because most people aren't aware of the damage they cause. This damage is known as a "carbon footprint" and it can be measured. We made the ClimateHelper bot in order to spread awareness about the carbon footprint, as well as provide everyone with the tools necessary to check how much damage they are causing.</h3>
+    </div>
+  </body>
+</html>

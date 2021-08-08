@@ -1,0 +1,27 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type='text/css', href= "{% static 'main/style.css' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <ul>
+    <li><a class="active" href="{% url 'home-main'%}">Home</a></li>
+    <li><a href="#">Commands</a></li>
+    <li><a href="{% url 'about-main'%}">About</a></li>
+    <li><a href="{% url 'views-main' %}">Add to Discord</a></li>
+    <li style="float:left"><a href="#">ClimateHelper</a></li>
+  </ul>
+    <script src="script.js"></script>
+    <div class ="test">
+    <h1>Climate Helper<h1>
+    <h2>Help save the Enviroment with this discord bot!</h2>
+    <a href="{% url 'views-main' %}" class="button">Add to Discord</a>
+    <a href="#" class="button">See Features</a>
+    </div>
+  </body>
+</html>
