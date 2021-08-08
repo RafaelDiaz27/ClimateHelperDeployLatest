@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-km#f3&ptf$2g&)k2@w7g@n5)6eis5dl@u8s(ujn#=pm2i=d8x)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'climatehelper.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'climatehelper.herokuapp.com']
 
 
 # Application definition
